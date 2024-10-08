@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LLista d'Usuaris</title>
+</head>
+<body>
+    <h1>Llista d'Usuaris</h1>
+    <ul>
+        {% for user in users %}
+            <li>
+                <a href="/user/{{ loop.index0 }}">{{ user.nom }} {{ user.cognom }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
